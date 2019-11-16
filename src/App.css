@@ -6,8 +6,12 @@
   height: 40vmin;
 }
 
+.App-placeholder {
+  height: 100vh
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #151314;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
