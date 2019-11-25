@@ -72,7 +72,7 @@ class Skills extends React.Component {
                     <span style={{width: "120px"}} className={underline_class}>&nbsp;</span>
                     <div className="App-skillContent">
                         <ul>
-                            <li>UX and IoT Whitepaper, Documentation, MachineShop, 2 years</li>
+                            <li><a className="App-link" href="https://www.machineshop.io/resources/author/stefan-kowal">UX and IoT Whitepaper</a>, Documentation, MachineShop, 2 years</li>
                             <li>HackerRank Problem Editor, HackerRank, 1 year.</li>
                         </ul>
                     </div>
