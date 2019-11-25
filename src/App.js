@@ -1,13 +1,18 @@
 import React from 'react';
-import placeholder from './portfolio.png';
 import './App.css';
+
+//pages
+import Splash from './pages/Splash';
+import Skills from './pages/Skills';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={placeholder} className="App-placeholder" alt="placeholder" />
-      </header>
+      {/* <div className="App-page1"> */}
+        <Splash />
+        <Skills />
+      {/* </div> */}
     </div>
   );
 }

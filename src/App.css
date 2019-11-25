@@ -1,26 +1,206 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-}
 
-.App-placeholder {
-  height: 100vh
-}
-
-.App-header {
-  background-color: #151314;
-  min-height: 100vh;
+.App-page1 {
+  background: linear-gradient(to right bottom, #6052B3 50%, black 50%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@keyframes word{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+.App-face {
+  margin: auto;
+  padding: 10%;
+  box-sizing: border-box;
+  animation: word 1s forwards;
+}
+
+.App-faceResponsive {
+  margin: 105px auto auto auto;
+}
+
+.App-textResponsive {
+  top: 105px;
+}
+
+.App-splashContainer {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  flex-direction: column;
+  background: linear-gradient(to right bottom, #6052B3 50%, black 50%);
+}
+
+.App-name {
+  font-family: Avenir;
+  color: #6052B3; 
+  font-size: 4vw;
+  width: 50px;
+  font-weight: bolder;
+  line-height: 5vw;
+  position: absolute;
+  text-transform: capitalize;
+  right: 12%;
+}
+
+.App-scroll {
+  display: flex;
+  align-items: center;
+  font-family: Avenir;
+  color: white; 
+  font-size: 18px;
+  width: 50px;
+  font-weight: bolder;
+  line-height: 5vw;
+  position: absolute;
+  text-transform: capitalize;
+  right: 12%;
+  bottom: 5%;
+}
+
+.App-nameResponsive {
+  top: 6%;
+  left: 10%;
+  width: unset;
+  color: black;
+}
+
+.App-text {
+  width: 100%;
+  animation: word 1s forwards;
+  opacity: 0;
+}
+
+.App-mainText {
   color: white;
+  font-size: 8.5vw;
+  margin: auto auto auto 10%;
+  position: absolute;
+  font-family: Hiragino Kaku Gothic StdN;
+  text-transform: uppercase;
+  max-height: 100vh;
+}
+
+.App-first {
+  animation-delay: 1s;
+}
+
+.App-second {
+  animation-delay: 1.5s;
+}
+
+.App-third {
+  animation-delay: 2s;
+}
+
+.App-fourth {
+  animation-delay: 2.5s;
+}
+
+.App-skillsTop {
+  background: linear-gradient(to right bottom, black 50%, #6052B3 50%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-skillsBottom {
+  background: linear-gradient(to left bottom, #6052B3 50%, black 50%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-skill {
+  height: 33vh;
+  flex-direction: column;
+  width: 33%;
+  color: white;
+  font-family: Avenir;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  font-size: 30px;
+  flex-wrap: wrap;
+  padding: 7% 0 0 6%;
+  box-sizing: border-box;
+}
+
+.App-skillRow {
+  display: flex;
+  align-items: center;
+}
+.App-skillText {
+  width: 80%;
+}
+
+.App-skillIcon {
+  margin-right: 8px;
+  font-size: 42px !important;
+}
+
+.App-skillUnderline {
+  border-bottom: solid white 3px;
+  height: 4px;
+  margin-top: 0;
+  margin-bottom: auto;
+  display: flex;
+}
+.App-skillUnderlineResponsive {
+  margin-bottom: 0;
+}
+
+.App-skillContent {
+  position: absolute;
+  width: initial;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.App-skillContentResponsive {
+  width: 100%;
+  margin-top: 0;
+}
+
+.App-right {
+  margin-left: 66%;
+}
+
+.App-left {
+  margin-right: 66%;
+}
+
+.App-middle {
+  margin-left: 33%;
+}
+
+.App-skillResponsive {
+  margin-left: unset;
+  margin-right: unset;
+  width: 66%;
+}
+
+.App-contact {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: Avenir;
+  font-weight: bolder;
+  background-color: black;
+  padding-bottom: 24px;
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #D8644F;
+  text-decoration: underline;
+  cursor: pointer;
 }
