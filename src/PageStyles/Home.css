@@ -1,0 +1,27 @@
+.Home-sliderContainer {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.Home-background {
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+}
+
+.Home-backgroundText {
+    color: white;
+    font-size: 25vh;
+    font-family: "Roboto";
+    height: 75%;
+}
+
+.Home-backgroundTextBottom {
+    color: white;
+    font-size: 25vh;
+    font-family: "Roboto";
+    height: 25%;
+    text-align: right;
+}
