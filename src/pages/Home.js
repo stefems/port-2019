@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import '../PageStyles/Home.css';
 import '../slider_styles.scss';
-//images
 import { professional, design, muse, writing, github, mirror } from '../images';
 
 const slideData = [

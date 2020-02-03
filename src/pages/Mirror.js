@@ -2,8 +2,8 @@ import React from 'react';
 
 function Mirror() {
   return (
-    <div >
-      Mirror
+    <div className={"General-container"}>
+      In construction, last edited Feb 2020.
     </div>
   );
 }

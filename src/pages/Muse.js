@@ -2,8 +2,8 @@ import React from 'react';
 
 function Muse() {
   return (
-    <div >
-      Muse
+    <div className={"General-container"}>
+      In construction, last edited Feb 2020.
     </div>
   );
 }
