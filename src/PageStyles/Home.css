@@ -14,8 +14,8 @@
 .Home-backgroundText {
     color: white;
     font-size: 25vh;
-    font-family: "Roboto";
     height: 75%;
+    line-height: .8;
 }
 
 .Home-backgroundTextBottom {
