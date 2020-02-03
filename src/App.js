@@ -7,24 +7,32 @@ import {
 } from "react-router-dom";
 //pages
 import { Home, Professional, GitHub, Writing, Mirror, Muse, Design } from './pages';
+import ContentWrapper from './components/ContentWrapper';
 
 
 function App() {
-  const routes = [
+  const homes = [
     {component: <Home />, path: "/home"},
+    {component: <Home />, path: "/"},
+  ];
+  const routes = [
     {component: <Professional />, path: "/professional"},
     {component: <GitHub />, path: "/github"},
     {component: <Design />, path: "/design"},
     {component: <Writing />, path: "/writing"},
     {component: <Mirror />, path: "/mirror"}, 
     {component: <Muse />, path: "/sound_ideas"},
-    {component: <Home />, path: "/"},
   ];
   return (
     <div className="App">
       <Router>
         <Switch>
           {routes.map( ({path, component}) => 
+            (<Route key={path} path={path}>
+              <ContentWrapper content={component}/>
+            </Route>)
+          )}
+          {homes.map( ({path, component}) => 
             (<Route key={path} path={path}>
               {component}
             </Route>)

@@ -1,0 +1,33 @@
+.ContentWrapper-middleColumn {
+    width: 66%;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.ContentWrapper-container {
+    background: #101118;
+}
+
+.ContentWrapper-bgTextContainer {
+    color: white;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    font-size: 10vw;
+}
+
+.ContentWrapper-bgText {
+    transform: rotate(90deg);
+    position: fixed;
+    left: -10%;
+    top: 25%;
+}
+
+.ContentWrapper-bgTextRight {
+    transform: rotate(-90deg);
+    bottom: 25%;
+    position: fixed;
+    right: -10%;
+}

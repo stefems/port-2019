@@ -1,5 +1,6 @@
 import React from 'react';
 import NavMenu from './NavMenu';
+import './ContentWrapper.css';
 
 class ContentWrapper extends React.Component {
 
@@ -10,13 +11,16 @@ class ContentWrapper extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-                <div></div>
+            <div className={"ContentWrapper-container"}>
+                <div className={"ContentWrapper-bgTextContainer"}>
+                    <span className={"ContentWrapper-bgText"}>STEFAN</span>
+                    <span className={"ContentWrapper-bgTextRight"}>KOWAL</span>
+                </div>
                 <div className={"ContentWrapper-middleColumn"}>
                     <NavMenu />
                     {this.props.content}
                 </div>
-            </React.Fragment>
+            </div>
             
         );
     }

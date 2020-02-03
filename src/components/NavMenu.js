@@ -2,6 +2,7 @@ import React from 'react';
 import {
   NavLink
 } from "react-router-dom";
+import './NavMenu.css';
 
 function NavMenu() {
   const routes = [
@@ -14,9 +15,10 @@ function NavMenu() {
     {display: "Sound Ideas", path: "/sound_ideas"},
   ];
   return (
-    <div>
+    <div className={"NavMenu-linkContainer"}>
         {routes.map( ({path, display}) => 
             (<NavLink
+                key={path}
                 to={path}
                 activeStyle={{
                   textDecoration: "line-through"
